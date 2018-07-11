@@ -20,17 +20,35 @@
             <!-- action - where the form sends data to -->
             <!-- method - what http method (get/post) -->
             <!--  -->
-        <form>
-          <input name="username" type="text" placeholder="username">
-          <input name="password" type="password" placeholder = "password">
+        <!-- <form action="https://wikipedia.org" method=GET>
+          <lable>
+            <input name="username" type="text" placeholder="username">
+          </lable>
+
+          <lable>
+            <input name="password" type="password" placeholder="password">
+          </lable>
+        
           <input type="submit">
 
+        </form> -->
 
+
+        <!-- "for" and "id" attributes link the lable to the input -->
+        <!-- also lable tags allow vision impaired users screen reader software to read them -->
+        <!-- for usefulness -->
+
+        <form action="https://www.wikipedia.org">
+            <lable for="username">Email:</lable>
+            <input id="username" type="email" placeholder="email" required>
+  
+            <lable for="password">Password:</lable>
+            <input id="password" type="password" placeholder="password" required>
+          
+            <input type="submit">
+  
         </form>
-        
-        
-        
-        
+         
         <script src="" async defer></script>
     </body>
 </html>
